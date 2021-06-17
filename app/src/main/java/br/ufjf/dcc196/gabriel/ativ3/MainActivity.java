@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         TextView.OnEditorActionListener listenerOperadores = new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                calcularTotal(v);
                 return false;
             }
         };
