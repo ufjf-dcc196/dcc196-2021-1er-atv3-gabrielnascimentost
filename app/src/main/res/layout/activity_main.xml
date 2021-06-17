@@ -21,4 +21,109 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <TextView
+        android:id="@+id/txtCalculadora2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Calculadora"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtOperatores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Operações"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtNumeroDois"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroDois" />
+
+    <TextView
+        android:id="@+id/txtNumeroUm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Número 1: "
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txtCalculadora"
+        app:layout_constraintTop_toBottomOf="@+id/txtCalculadora" />
+
+    <TextView
+        android:id="@+id/txtNumeroDois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Número 2: "
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txtNumeroUm"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroUm" />
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtNumeroUm"
+        app:layout_constraintTop_toBottomOf="@+id/txtCalculadora" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtNumeroDois"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber1" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/txtOperatores"
+        app:layout_constraintTop_toBottomOf="@+id/txtOperatores">
+
+        <RadioButton
+            android:id="@+id/radioButtonSoma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soma" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subtração" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Divisão" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multiplicacao" />
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
