@@ -3,7 +3,9 @@ package br.ufjf.dcc196.gabriel.ativ3;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -27,6 +29,23 @@ public class MainActivity extends AppCompatActivity {
         editTextNum2 = findViewById(R.id.editTextNumber2);
         textViewResultado = findViewById(R.id.textViewResultado);
         radioGroupOperacoes = findViewById(R.id.radioGroup);
+
+        radioGroupOperacoes.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                calcularTotal(group);
+            }
+        });
+
+        TextView.OnEditorActionListener listenerOperadores = new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                return false;
+            }
+        };
+
+        editTextNum1.setOnEditorActionListener(listenerOperadores);
+        editTextNum2.setOnEditorActionListener(listenerOperadores);
     }
 
     public void calcularTotal(View view){
