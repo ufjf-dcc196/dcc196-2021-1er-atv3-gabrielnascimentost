@@ -44,6 +44,14 @@
         app:layout_constraintTop_toBottomOf="@+id/txtCalculadora" />
 
     <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@+id/txtResultado"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultado" />
+
+    <TextView
         android:id="@+id/txtNumeroDois"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -64,19 +72,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txtNumeroUm"
         app:layout_constraintTop_toBottomOf="@+id/txtCalculadora" />
-
-    <EditText
-        android:id="@+id/editTextResultado"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/txtResultado"
-        app:layout_constraintTop_toBottomOf="@+id/txtResultado" />
 
     <EditText
         android:id="@+id/editTextNumber2"
