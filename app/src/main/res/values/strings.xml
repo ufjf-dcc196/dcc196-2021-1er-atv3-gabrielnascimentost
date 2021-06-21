@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ativ3</string>
+    <string name="divis_o">Divisão</string>
+    <string name="resultado">Resultado:</string>
+    <string name="soma">Soma</string>
+    <string name="multiplicacao">Multiplicacao</string>
+    <string name="subtra_o">Subtração</string>
+    <string name="n_mero_1">Número 1:</string>
+    <string name="n_mero_2">Número 2:</string>
+    <string name="calculadora">Calculadora</string>
+    <string name="digite_o_n_mero_1">Digite o número 1</string>
+    <string name="digite_o_n_mero_2">Digite o número 2</string>
 </resources>

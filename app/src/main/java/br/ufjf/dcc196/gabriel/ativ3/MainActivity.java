@@ -69,7 +69,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.radioButtonDiv:
-                resultadoOperacao = operandoUm/operandoDois;
+                if((operandoUm == 0.0) || (operandoDois == 0.0)) {
+                    resultadoOperacao = 0.0;
+                }else{
+                    resultadoOperacao = operandoUm/operandoDois;
+
+                }
                 break;
 
             case R.id.radioButtonSub:
